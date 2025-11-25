@@ -8,10 +8,7 @@ export default function LayoutWrapper({ children }) {
   const pathname = usePathname();
 
   // Pages that should NOT show Hero + Footer
- const noLayoutPages = ["/admin/login-page"];
-
-  console.log("noLayoutPages",noLayoutPages,pathname);
-  
+ const noLayoutPages = ["/admin/login-page"];  
 
   const hideLayout = noLayoutPages.includes(pathname);
 
